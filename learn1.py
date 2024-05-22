@@ -187,11 +187,11 @@ if __name__ == '__main__':
     canvas = Canvas(root, bg='black', height=CANVAS_HEIGHT, width=CANVAS_WIDTH)
     canvas.pack()
 
-    # 创建按钮
-    start_button = Button(root, text="Start", command=start_animation)
+    # 创建按钮并添加中文字体
+    start_button = Button(root, text="开始", command=start_animation)
     start_button.pack(side='left', padx=20, pady=20)
 
-    quit_button = Button(root, text="Quit", command=quit_program)
+    quit_button = Button(root, text="退出", command=quit_program)
     quit_button.pack(side='right', padx=20, pady=20)
 
     heart = Heart()  # 心
